@@ -1,0 +1,25 @@
+{
+  "inbounds": [
+    {
+      "port": "$PORT",
+      "protocol": "$PROTOCOL",
+      "settings": {
+        "clients": [
+          {
+            "id": "$UUID",
+            "alterId": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
