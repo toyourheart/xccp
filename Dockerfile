@@ -1,6 +1,6 @@
-FROM alpine:3.5
+FROM v2fly/v2fly-core:latest
 
-RUN apk add --no-cache --virtual .build-deps ca-certificates curl gettext
+RUN apk add --no-cache gettext
 COPY config.json.tp /root/
 ADD startup.sh /startup.sh
 RUN chmod +x /startup.sh
