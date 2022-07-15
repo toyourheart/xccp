@@ -47,6 +47,7 @@ jobs:
       EMAIL: ${{ secrets.EMAIL }}
       HEROKU_V2RAY_UUID: ${{ secrets.HEROKU_V2RAY_UUID }}
       HEROKU_TUNNEL_TOKEN: ${{ secrets.HEROKU_TUNNEL_TOKEN }}
+      HEROKU_PROTOCOL: ${{ secrets.HEROKU_PROTOCOL || vless }}
     steps:
       - run: |
           echo "actions: ${{ github.event.inputs.actions }}"
