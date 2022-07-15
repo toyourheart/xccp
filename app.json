@@ -12,6 +12,10 @@
         "TUNNEL_TOKEN": {
             "description": "Cloudflare Tunnel Token",
             "required": false
+        },
+        "PROTOCOL": {
+            "description": "V2Ray PROTOCOL",
+            "value": "vless"
         }
     },
     "website": "",
