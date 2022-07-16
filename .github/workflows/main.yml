@@ -42,9 +42,7 @@ jobs:
         # uses: sergeysova/jq-action@acfe8e31f0c7ba4225e7155f66996fad20cdc3af
         uses: sergeysova/jq-action@v2
         with:
-          path: './'
-          cmd: jq . config.json.tp
-          multiline: true
+          cmd: jq . ./config.json.tp
 
   output-jobenv:
     runs-on: ubuntu-latest
