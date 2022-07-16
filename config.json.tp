@@ -19,7 +19,33 @@
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
     }
-  ]
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "protocol": [
+          "bittorrent"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-porn",
+          "geosite:category-ads-all",
+          "geosite:private"
+        ]
+      }
+    ]
+  }
 }
