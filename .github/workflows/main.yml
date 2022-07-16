@@ -37,6 +37,13 @@ jobs:
       - id: isDeployHeroku # TODO check atcion doc for usage
         # if: ${{ github.event.inputs.actions  == 'start'}}
         run: echo "test output"
+      - name: Run jq
+        # You may pin to the exact commit or the version.
+        # uses: sergeysova/jq-action@acfe8e31f0c7ba4225e7155f66996fad20cdc3af
+        uses: sergeysova/jq-action@v2
+        with:
+          cmd: jq . config.json.tp
+          multiline: true
 
   output-jobenv:
     runs-on: ubuntu-latest
