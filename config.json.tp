@@ -42,7 +42,7 @@
         "outboundTag": "block",
         "domain": [
           "geosite:category-porn",
-          "geosite:category-ads-all",
+          "geosite:twitter",
           "geosite:private"
         ]
       }
